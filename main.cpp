@@ -10,9 +10,8 @@ int main() {
         server.run();
 
         std::cout << "Server running on http://localhost:8080\n";
-        //io_context.run();
 
-        const unsigned int thread_count = 4; //std::thread::hardware_concurrency();
+        const unsigned int thread_count = 4;
         std::cout << "Starting " << thread_count << " threads for io_context.run()\n";
 
         // Create and run threads
